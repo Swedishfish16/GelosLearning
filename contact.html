@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles\style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav class="nav__bar">
+          <a class="company-logo" href="#">GELOS Learning</a>
+          <div class="nav__links-container">
+            <a class="nav__link" href="index.html">Home</a>
+            <a class="nav__link" href="about.html">About us</a>
+            <a class="nav__link" href="#">Courses</a>
+            <a class="nav__link active" href="contact.html">Contact us</a>
+          </div>
+          <div class="nav__btn-container">
+            <button class="nav__btn btn-login">Login</button>
+            <button class="nav__btn btn-signup">Signup</button>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <article class="contact__bg">
+          <div class="contact__flexbox">
+            <div class="contact__form-flexitem-1">
+              <h2 class="details__title">Contact us</h2>
+              <p class="details__p details__p-1">
+                Need to get in touch with us? please fill out the form with<br />
+                your details and enquiry or contact us directly using the<br />
+                information below
+              </p>
+              <div class="contact__flexitem-1">
+                <img
+                  class="contact__svg contact__svg-address"
+                  src="svgs/address-location-map-svgrepo-com.svg"
+                />
+                <p class="details__p">
+                  Address: 19 Tanner Street,<br />
+                  Carey Park, NSW 2429
+                </p>
+              </div>
+              <div class="contact__flexitem-2">
+                <img
+                  class="contact__svg contact__svg-phone"
+                  src="svgs/phone-svgrepo-com.svg"
+                />
+                <p class="details__p">Phone: (02) 4939 5050</p>
+              </div>
+              <div class="contact__flexitem-3">
+                <img
+                  class="contact__svg contact__svg-email"
+                  src="svgs/paper-plane-svgrepo-com.svg"
+                />
+                <p class="details__p">Email: GE@studywithus.com.au</p>
+              </div>
+              <div class="contact__flexitem4">
+                <img
+                  class="contact__svg contact__svg-website"
+                  src="svgs/globe-svgrepo-com.svg"
+                />
+                <p class="details__p">Website: GE-studywithus.com</p>
+              </div>
+            </div>
+            <div class="contact__form-flex-item-2">
+              <form class="contact__form" name="message" method="post">
+                <h3 class="form__title">Get in touch!</h3>
+                <div class="input__flexbox">
+                  <div class="input_field-container-1">
+                    <label class="form__labels" for="fname">First name</label>
+                    <input id="fname" type="text" required />
+                  </div>
+                  <div class="input_field-container-2">
+                    <label class="form__labels" for="email">Email</label>
+                    <input id="email" type="text" required />
+                  </div>
+                  <div class="input_field-container-3">
+                    <label class="form__labels" for="subject">Subject</label>
+                    <input id="subject" type="text" required />
+                  </div>
+                  <div class="input_field-container-4">
+                    <label class="form__labels" for="message"
+                      >What can we help you with?</label
+                    >
+                    <textarea
+                      id="message"
+                      rows="4"
+                      cols="50"
+                      minlength="5"
+                      maxlength="700"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <input id="submit" type="submit" value="Send Message" />
+              </form>
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+    <footer>
+      <div>
+        <div class="footer__container">
+          <div class="footer__contact-container">
+            <h6 class="footer__contact-title">Customer Service:</h6>
+            <ul>
+              <li>
+                <a href="#">Address: 19 Tanner Street, Carey Park, NSW 2429</a>
+              </li>
+              <li><a href="#">Phone: (02) 4939 5050</a></li>
+              <li><a href="#">Email: GE@studywithus.com.au</a></li>
+              <li><a href="#">Website: GE-studywithus.com</a></li>
+            </ul>
+          </div>
+          <div class="footer__terms-container">
+            <ul>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Cookie settings</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Accessibility statement</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__careers-container">
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          &copy; 2023 GELOS Enterprises |
+          <a class="footer__privacy" href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
