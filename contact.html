@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="styles\style.css" />
+    <script defer src="scripts/script.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
@@ -66,37 +67,78 @@
               </div>
             </div>
             <div class="contact__form-flex-item-2">
-              <form class="contact__form" name="message" method="post">
-                <h3 class="form__title">Get in touch!</h3>
-                <div class="input__flexbox">
-                  <div class="input_field-container-1">
-                    <label class="form__labels" for="fname">First name</label>
-                    <input id="fname" type="text" required />
+              <form
+                class="contact__form"
+                action="/contact.html"
+                method="GET"
+                name="message"
+              >
+                <div class="form-container">
+                  <h3 class="form__title">Get in touch!</h3>
+                  <div class="input__flexbox">
+                    <div class="input_field-container-1">
+                      <label class="form__labels" for="fname">First name</label>
+                      <input
+                        placeholder="Your name here..."
+                        class="name-input"
+                        id="fname"
+                        name="fname"
+                        type="text"
+                      />
+                      <div class="error-hint hidden" id="name-error">
+                        Valid name required
+                      </div>
+                    </div>
+                    <div class="input_field-container-2">
+                      <label class="form__labels" for="email">Email</label>
+                      <input
+                        placeholder="Your email here..."
+                        class="email-input"
+                        id="email"
+                        name="email"
+                        type="text"
+                      />
+                      <div class="error-hint hidden" id="email-error">
+                        Valid email is required
+                      </div>
+                    </div>
+                    <div class="input_field-container-3">
+                      <label class="form__labels" for="subject">Subject</label>
+                      <input
+                        placeholder="Subject here..."
+                        class="subject-input"
+                        id="subject"
+                        name="subject"
+                        type="text"
+                      />
+                      <div class="error-hint hidden" id="subject-error">
+                        Subject is required
+                      </div>
+                    </div>
+                    <div class="input_field-container-4">
+                      <label class="form__labels" for="message"
+                        >What can we help you with?</label
+                      >
+                      <textarea
+                        placeholder="Your message here..."
+                        id="message"
+                        class="message-input"
+                        name="message"
+                        rows="4"
+                        cols="50"
+                        maxlength="700"
+                      ></textarea>
+                      <div class="error-hint hidden" id="message-error">
+                        Message is required
+                      </div>
+                    </div>
                   </div>
-                  <div class="input_field-container-2">
-                    <label class="form__labels" for="email">Email</label>
-                    <input id="email" type="text" required />
-                  </div>
-                  <div class="input_field-container-3">
-                    <label class="form__labels" for="subject">Subject</label>
-                    <input id="subject" type="text" required />
-                  </div>
-                  <div class="input_field-container-4">
-                    <label class="form__labels" for="message"
-                      >What can we help you with?</label
-                    >
-                    <textarea
-                      id="message"
-                      rows="4"
-                      cols="50"
-                      minlength="5"
-                      maxlength="700"
-                      required
-                    ></textarea>
-                  </div>
+                  <button id="submit" type="submit">Send Message</button>
                 </div>
-                <input id="submit" type="submit" value="Send Message" />
               </form>
+              <div class="thank-you hidden">
+                Thankyou for reaching out! <br />We'll get back to you shortly!
+              </div>
             </div>
           </div>
         </article>

@@ -360,36 +360,32 @@ li {
   font-size: 1.6rem;
 }
 
-#fname {
+.form-container input {
   background-color: #e7e7e7;
   border: none;
-  width: 20rem;
   height: 3rem;
   margin-bottom: 1rem;
+}
+
+#fname {
+  width: 20rem;
 }
 
 #email {
-  background-color: #e7e7e7;
-  border: none;
   width: 20rem;
-  height: 3rem;
 }
 
-#subject {
-  background-color: #e7e7e7;
-  border: none;
+.subject-input {
   width: 41rem;
-  height: 3rem;
-  margin-bottom: 1rem;
 }
 
-#message {
+.message-input {
   resize: none;
   background-color: #e7e7e7;
   border: none;
   width: 41rem;
   height: 15rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 #submit {
@@ -402,10 +398,31 @@ li {
   font-size: 1.6rem;
   transition: ease-in-out 0.2s;
   cursor: pointer;
+  margin-top: 3rem;
 }
 
 #submit:hover {
   background-color: #1e50c8;
+}
+
+input.invalid {
+  border: 1px solid red;
+}
+
+.error-hint {
+  font-size: 1.3rem;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.thank-you {
+  padding: 40px;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 80%;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////// */
